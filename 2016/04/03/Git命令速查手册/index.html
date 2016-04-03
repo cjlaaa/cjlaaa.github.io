@@ -67,7 +67,7 @@
 <meta property="og:description" content="早就想要系统的学习一下Git,今天终于开始行动了,对我这种懒癌晚期来说真是不容易啊!
 想要系统的学习Git还请移步廖雪峰的Git教程,本文可以看成是这篇教程的速查版.
 这个testGit项目是我在学习Git时的测试项目,期间尝试更换远程库时遇到了一些问题请见附:更换远程库流程及遇到的问题">
-<meta property="og:updated_time" content="2016-04-03T17:00:07.000Z">
+<meta property="og:updated_time" content="2016-04-03T17:16:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git命令速查手册">
 <meta name="twitter:description" content="早就想要系统的学习一下Git,今天终于开始行动了,对我这种懒癌晚期来说真是不容易啊!
@@ -319,92 +319,169 @@
 <p>想要系统的学习Git还请移步<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external"><strong>廖雪峰的Git教程</strong></a>,本文可以看成是这篇教程的速查版.</p>
 <p>这个<a href="https://github.com/cjlaaa/testGit.git" target="_blank" rel="external"><strong>testGit</strong></a>项目是我在学习Git时的测试项目,期间尝试更换远程库时遇到了一些问题请见<a href="#更换远程库流程及遇到的问题"><strong>附:更换远程库流程及遇到的问题</strong></a></p>
 <a id="more"></a>
-<h1 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h1><p>初始化一个Git仓库: </p>
+<h1 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h1><ul>
+<li><p>初始化一个Git仓库: </p>
 <pre><code>git init
-</code></pre><p>添加文件到Git仓库,分两步:</p>
+</code></pre></li>
+<li><p>添加文件到Git仓库,分两步:</p>
 <pre><code>git add &lt;file1&gt; &lt;file2&gt;
 git commit -m &lt;text&gt;
-</code></pre><h1 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h1><p>查询工作区状态:</p>
+</code></pre></li>
+</ul>
+<h1 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h1><ul>
+<li><p>查询工作区状态:</p>
 <pre><code>git status
-</code></pre><p>查询项目修改内容:</p>
+</code></pre></li>
+<li><p>查询项目修改内容:</p>
 <pre><code>git diff
-</code></pre><h2 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h2><p>查看版本历史/单行显示</p>
+</code></pre></li>
+</ul>
+<h2 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h2><ul>
+<li><p>查看版本历史/单行显示</p>
 <pre><code>git log
 git log --pretty=oneline
-</code></pre><p>HEAD代表当前版本,版本穿梭:</p>
+</code></pre></li>
+<li><p>HEAD代表当前版本,版本穿梭:</p>
 <pre><code>git reset --hard &lt;commit_id&gt;
-</code></pre><p>查看命令历史:</p>
+</code></pre></li>
+<li><p>查看命令历史:</p>
 <pre><code>git reflog
-</code></pre><h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><p>git add命令将要提交的修改放到暂存区,git commit将暂存区的修改提交到分支.</p>
-<h2 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h2><p>Git不是跟踪文件,而是跟踪修改.</p>
-<p>每次修改如果不add到暂存区,则不会被commit.</p>
-<p>查看工作区和版本库里面最新版本区别:</p>
+</code></pre></li>
+</ul>
+<h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><ul>
+<li>git add命令将要提交的修改放到暂存区,git commit将暂存区的修改提交到分支.</li>
+</ul>
+<h2 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h2><ul>
+<li><p>Git不是跟踪文件,而是跟踪修改.</p>
+</li>
+<li><p>每次修改如果不add到暂存区,则不会被commit.</p>
+</li>
+<li><p>查看工作区和版本库里面最新版本区别:</p>
 <pre><code>git diff HEAD -- &lt;file&gt;
-</code></pre><h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><p>撤销工作区内容至最近一次git commit或git add:</p>
+</code></pre></li>
+</ul>
+<h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><ul>
+<li><p>撤销工作区内容至最近一次git commit或git add:</p>
 <pre><code>git checkout -- &lt;file&gt;
-</code></pre><p>撤销暂存区内容到工作区:</p>
+</code></pre></li>
+<li><p>撤销暂存区内容到工作区:</p>
 <pre><code>git reset HEAD &lt;file&gt;
-</code></pre><p>撤销提交到版本库(未推送到远程库)的内容,请参考’版本回退’一节.</p>
-<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><p>删除版本库中的文件:</p>
+</code></pre></li>
+<li><p>撤销提交到版本库(未推送到远程库)的内容,请参考’版本回退’一节.</p>
+</li>
+</ul>
+<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><ul>
+<li><p>删除版本库中的文件:</p>
 <pre><code>git rm &lt;file&gt;
-</code></pre><p>将版本库中的文件恢复到工作区:</p>
+</code></pre></li>
+<li><p>将版本库中的文件恢复到工作区:</p>
 <pre><code>git checkout -- &lt;file&gt;
-</code></pre><h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><p>在本地生成SSH Key:</p>
+</code></pre></li>
+</ul>
+<h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><ul>
+<li><p>在本地生成SSH Key:</p>
 <pre><code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;
-</code></pre><p>并在远程库设置SSH key.    </p>
-<h2 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h2><p>关联本地库与远程库(默认为origin):</p>
+</code></pre></li>
+<li><p>需在远程库设置SSH key.    </p>
+</li>
+</ul>
+<h2 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h2><ul>
+<li><p>关联本地库与远程库(默认为origin):</p>
 <pre><code>git remote add origin git@gitlab.com:cjlaaa/test.git
-</code></pre><p>解除与远程库的关联(更换远程库时使用):</p>
+</code></pre></li>
+<li><p>解除与远程库的关联(更换远程库时使用):</p>
 <pre><code>git remote rm origin
-</code></pre><p>第一次将本地库master分支推送到远程库并关联(远程库为新建的空库时使用-u):</p>
+</code></pre></li>
+<li><p>第一次将本地库master分支推送到远程库并关联(远程库为新建的空库时使用-u):</p>
 <pre><code>git push -u origin master
-</code></pre><p>本地提交推送:</p>
+</code></pre></li>
+<li><p>本地提交推送:</p>
 <pre><code>git push origin master
-</code></pre><h2 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h2><p>从远程库克隆:</p>
+</code></pre></li>
+</ul>
+<h2 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h2><ul>
+<li><p>从远程库克隆:</p>
 <pre><code>git clone &lt;website&gt;
-</code></pre><p>使用https速度较慢,稳定性差,每次都需要输入口令.(这里特指命令行,很多第三方客户端一般不需要每次输入)</p>
-<p>使用ssh速度快,但需要设置ssh key.</p>
-<h1 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h1><h2 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h2><p>查看分支:</p>
+</code></pre></li>
+<li><p>使用https速度较慢,稳定性差,每次都需要输入口令.(这里特指命令行,很多第三方客户端一般不需要每次输入)</p>
+</li>
+<li><p>使用ssh速度快,但需要设置ssh key.</p>
+</li>
+</ul>
+<h1 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h1><h2 id="创建与合并分支"><a href="#创建与合并分支" class="headerlink" title="创建与合并分支"></a>创建与合并分支</h2><ul>
+<li><p>查看分支:</p>
 <pre><code>git branch
-</code></pre><p>创建分支:</p>
+</code></pre></li>
+<li><p>创建分支:</p>
 <pre><code>git branch &lt;name&gt;
-</code></pre><p>切换分支:</p>
+</code></pre></li>
+<li><p>切换分支:</p>
 <pre><code>git checkout &lt;name&gt;
-</code></pre><p>穿件+切换分支:</p>
+</code></pre></li>
+<li><p>穿件+切换分支:</p>
 <pre><code>git checkout -b &lt;name&gt;
-</code></pre><p>合并某分支到当前分支(默认Fast-forward模式):</p>
+</code></pre></li>
+<li><p>合并某分支到当前分支(默认Fast-forward模式):</p>
 <pre><code>git merge &lt;name&gt;
-</code></pre><p>删除分支:</p>
+</code></pre></li>
+<li><p>删除分支:</p>
 <pre><code>git branch -d &lt;name&gt;
-</code></pre><h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><p>合并时如果出现冲突,只需要手动解决冲突,然后再次add并commit即可.</p>
-<p>查看分支合并情况:</p>
+</code></pre></li>
+</ul>
+<h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><ul>
+<li><p>合并时如果出现冲突,只需要手动解决冲突,然后再次add并commit即可.</p>
+</li>
+<li><p>查看分支合并情况:</p>
 <pre><code>git log --graph    
 git log --graph --pretty=oneline --abbrev-commit
-</code></pre><h2 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h2><p>在团队开发中应该多使用分支功能.</p>
-<p>合并时使用no-ff模式会保留分支信息:</p>
+</code></pre></li>
+</ul>
+<h2 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h2><ul>
+<li><p>在团队开发中应该多使用分支功能.</p>
+</li>
+<li><p>合并时使用no-ff模式会保留分支信息:</p>
 <pre><code>git merge --no-ff -m &lt;text&gt; &lt;name&gt;
-</code></pre><h2 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h2><p>修复bug时最好创建新分支修复,然后合并并删除bug分支.</p>
-<p>将未完成的工作储藏并清空工作区:</p>
+</code></pre></li>
+</ul>
+<h2 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h2><ul>
+<li><p>修复bug时最好创建新分支修复,然后合并并删除bug分支.</p>
+</li>
+<li><p>将未完成的工作储藏并清空工作区:</p>
 <pre><code>git stash
-</code></pre><p>查看已经储藏的工作列表:</p>
+</code></pre></li>
+<li><p>查看已经储藏的工作列表:</p>
 <pre><code>git stash list
-</code></pre><p>恢复已经储藏的工作并删除储藏:</p>
+</code></pre></li>
+<li><p>恢复已经储藏的工作并删除储藏(两步):</p>
 <pre><code>git stash apply
 git stash drop
-</code></pre><p>或:</p>
+</code></pre></li>
+<li><p>恢复已经储藏的工作并删除储藏(一步):</p>
 <pre><code>git stash pop
-</code></pre><p>恢复指定的已储藏工作:</p>
+</code></pre></li>
+<li><p>恢复指定的已储藏工作:</p>
 <pre><code>git stash apply stash@{0}
-</code></pre><h2 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h2><p>开发一个新feature,最好新建一个分支.</p>
-<p>强行删除没有合并的分支:</p>
+</code></pre></li>
+</ul>
+<h2 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h2><ul>
+<li><p>开发一个新feature,最好新建一个分支.</p>
+</li>
+<li><p>强行删除没有合并的分支:</p>
 <pre><code>git branch -D &lt;name&gt;
-</code></pre><h2 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h2><p>查看远程库信息:</p>
+</code></pre></li>
+</ul>
+<h2 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h2><ul>
+<li><p>查看远程库信息:</p>
 <pre><code>git remote
 git remote -v
-</code></pre><p>本地新建的分支如果不推送到远程,则其他人不可见,可用来专门处理不需要与他人合作的工作,如修复bug.</p>
-<p>在本地创建和远程分支对应的分支:</p>
+</code></pre></li>
+<li><p>本地新建的分支如果不推送到远程,则其他人不可见,可用来专门处理不需要与他人合作的工作,如修复bug.</p>
+</li>
+<li><p>在本地创建和远程分支对应的分支:</p>
 <pre><code>git checkout -b &lt;branch-name&gt; origin/&lt;branch-name&gt;
-</code></pre><h3 id="多人协作的工作流程"><a href="#多人协作的工作流程" class="headerlink" title="多人协作的工作流程:"></a>多人协作的工作流程:</h3><ol>
+</code></pre></li>
+</ul>
+<h3 id="多人协作的工作流程"><a href="#多人协作的工作流程" class="headerlink" title="多人协作的工作流程:"></a>多人协作的工作流程:</h3><ol>
 <li><p>推送自己修改:</p>
 <pre><code>git push origin &lt;branch-name&gt;
 </code></pre></li>
@@ -420,36 +497,55 @@ git remote -v
 <pre><code>git push origin &lt;branch-name&gt;
 </code></pre></li>
 </ol>
-<h1 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h1><p>标签相当于版本库的快照.</p>
-<h2 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h2><p>创建标签(默认为HEAD):</p>
+<h1 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h1><ul>
+<li>标签相当于版本库的快照.</li>
+</ul>
+<h2 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h2><ul>
+<li><p>创建标签(默认为HEAD):</p>
 <pre><code>git tag &lt;name&gt;
-</code></pre><p>为某次提交创建标签:</p>
+</code></pre></li>
+<li><p>为某次提交创建标签:</p>
 <pre><code>git tag &lt;name&gt; &lt;commit-id&gt;
-</code></pre><p>创建带信息的标签:</p>
+</code></pre></li>
+<li><p>创建带信息的标签:</p>
 <pre><code>git tag -a &lt;name&gt; -m &lt;text&gt; &lt;commit-id&gt;
-</code></pre><p>查看所有标签:</p>
+</code></pre></li>
+<li><p>查看所有标签:</p>
 <pre><code>git tag
-</code></pre><p>查看某标签详细信息:</p>
+</code></pre></li>
+<li><p>查看某标签详细信息:</p>
 <pre><code>git show &lt;tag-name&gt;
-</code></pre><p>指定标签信息:</p>
+</code></pre></li>
+<li><p>指定标签信息:</p>
 <pre><code>git tag -a &lt;name&gt; -m &lt;text&gt;
-</code></pre><p>用PGP签名标签:</p>
+</code></pre></li>
+<li><p>用PGP签名标签:</p>
 <pre><code>git tag -s &lt;name&gt; -m &lt;text&gt;
-</code></pre><h2 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h2><p>删除标签:</p>
+</code></pre></li>
+</ul>
+<h2 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h2><ul>
+<li><p>删除标签:</p>
 <pre><code>git tag -d &lt;name&gt;
-</code></pre><p>推送某一个标签到远程:</p>
+</code></pre></li>
+<li><p>推送某一个标签到远程:</p>
 <pre><code>git push origin &lt;tag-name&gt;
-</code></pre><p>一次性推送所有标签:</p>
+</code></pre></li>
+<li><p>一次性推送所有标签:</p>
 <pre><code>git push origin --tags
-</code></pre><p>删除远程标签:</p>
+</code></pre></li>
+<li><p>删除远程标签:</p>
 <pre><code>git tag -d &lt;tag-name&gt;
 git push origin :refs/tags/&lt;tag-name&gt;
-</code></pre><h1 id="使用Github"><a href="#使用Github" class="headerlink" title="使用Github"></a>使用Github</h1><ol>
+</code></pre></li>
+</ul>
+<h1 id="使用Github"><a href="#使用Github" class="headerlink" title="使用Github"></a>使用Github</h1><ol>
 <li>Fork他人的开源库.</li>
 <li>在Fork过来的库上修改并上传.</li>
 <li>推送pull request给他人的库贡献代码(需要对方同意).</li>
 </ol>
-<h1 id="自定义Git"><a href="#自定义Git" class="headerlink" title="自定义Git"></a>自定义Git</h1><p>详情请见教程原文<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137621280731812dec22ecc9b44f4b2ca1c680f181a5b000" target="_blank" rel="external"><strong>廖雪峰的Git教程·自定义Git</strong></a></p>
+<h1 id="自定义Git"><a href="#自定义Git" class="headerlink" title="自定义Git"></a>自定义Git</h1><ul>
+<li>详情请见教程原文<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137621280731812dec22ecc9b44f4b2ca1c680f181a5b000" target="_blank" rel="external"><strong>廖雪峰的Git教程·自定义Git</strong></a></li>
+</ul>
 <h1 id="附-更换远程库流程及遇到的问题"><a href="#附-更换远程库流程及遇到的问题" class="headerlink" title="附:更换远程库流程及遇到的问题"></a><a name="更换远程库流程及遇到的问题"></a>附:更换远程库流程及遇到的问题</h1><p>注意:本部分并非<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external"><strong>廖雪峰的Git教程</strong></a>原文内容,而是我在学习&amp;测试过程中遇到的实际问题,现记录下来作为备用并与大家分享.</p>
 <p>我刚开始测试时使用的远程库是Gitlab,在最后准备发布这篇文章时,准备更换到Github上.以下为更换的流程及遇到的一些问题:</p>
 <ol>
