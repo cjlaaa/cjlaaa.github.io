@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Unity," />
@@ -44,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
 
 
 
@@ -54,10 +60,10 @@
 <meta name="description" content="Unity2D游戏开发从入门到精通这本书是从同事那借的,借我书的同事又是从另一个同事那借的,但另一个同事已经离职了,这真是个悲伤的故事,等我看完了想办法还给人家把…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity2D游戏开发从入门到精通1-2章">
-<meta property="og:url" content="http://cjlaaa.github.io/2016/01/26/Unity2D游戏开发从入门到精通1-2章/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/01/26/Unity2D游戏开发从入门到精通1-2章/index.html">
 <meta property="og:site_name" content="机智の常总 的地盘">
 <meta property="og:description" content="Unity2D游戏开发从入门到精通这本书是从同事那借的,借我书的同事又是从另一个同事那借的,但另一个同事已经离职了,这真是个悲伤的故事,等我看完了想办法还给人家把…">
-<meta property="og:updated_time" content="2016-01-26T10:43:23.000Z">
+<meta property="og:updated_time" content="2016-01-26T10:43:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unity2D游戏开发从入门到精通1-2章">
 <meta name="twitter:description" content="Unity2D游戏开发从入门到精通这本书是从同事那借的,借我书的同事又是从另一个同事那借的,但另一个同事已经离职了,这真是个悲伤的故事,等我看完了想办法还给人家把…">
@@ -65,10 +71,16 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: '',
-    sidebar: 'post',
-    motion: true
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -77,15 +89,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -103,7 +106,16 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -117,7 +129,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">程序员一枚,坐标帝都,无所事事</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -132,7 +144,7 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
@@ -196,36 +208,9 @@
       
 
       
-      
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
     </ul>
   
 
-  
-    <div class="site-search">
-      
-  
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', 'zrEaiJFUyLzLqWRuE4Y_','2.0.0');
-</script>
-
-
-
-    </div>
   
 </nav>
 
@@ -234,8 +219,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -266,7 +252,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-26T18:24:42+08:00" content="2016-01-26">
               2016-01-26
             </time>
@@ -274,7 +263,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/读书笔记/" itemprop="url" rel="index">
@@ -302,70 +295,79 @@
 
           
 
+          
+          
+
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><h3 id="Unity2D_u6E38_u620F_u5F00_u53D1_u4ECE_u5165_u95E8_u5230_u7CBE_u901A"><a href="#Unity2D_u6E38_u620F_u5F00_u53D1_u4ECE_u5165_u95E8_u5230_u7CBE_u901A" class="headerlink" title="Unity2D游戏开发从入门到精通"></a>Unity2D游戏开发从入门到精通</h3><p>这本书是从同事那借的,借我书的同事又是从另一个同事那借的,但另一个同事已经离职了,这真是个悲伤的故事,等我看完了想办法还给人家把…<br><a id="more"></a></p>
-<h3 id="u8BFB_u4E66_u7B14_u8BB0"><a href="#u8BFB_u4E66_u7B14_u8BB0" class="headerlink" title="读书笔记"></a>读书笔记</h3><h4 id="u7B2C_u4E00_u7AE0_Unity_u53CA_u5176_u7EC4_u6210_u7684_u4ECB_u7ECD"><a href="#u7B2C_u4E00_u7AE0_Unity_u53CA_u5176_u7EC4_u6210_u7684_u4ECB_u7ECD" class="headerlink" title="第一章 Unity及其组成的介绍"></a>第一章 Unity及其组成的介绍</h4><h5 id="1-1_u6982_u8FF0"><a href="#1-1_u6982_u8FF0" class="headerlink" title="1.1概述"></a>1.1概述</h5><p>本书基于Unity 4.5.1</p>
-<h4 id="u7B2C_u4E8C_u7AE0__u6750_u8D28_u548C_u7EB9_u7406"><a href="#u7B2C_u4E8C_u7AE0__u6750_u8D28_u548C_u7EB9_u7406" class="headerlink" title="第二章 材质和纹理"></a>第二章 材质和纹理</h4><h5 id="2-1_u6750_u8D28_u548C_u7EB9_u7406_u7684_u4F7F_u7528"><a href="#2-1_u6750_u8D28_u548C_u7EB9_u7406_u7684_u4F7F_u7528" class="headerlink" title="2.1材质和纹理的使用"></a>2.1材质和纹理的使用</h5><h6 id="2-1-1_u4F7F_u7528_u6750_u8D28"><a href="#2-1-1_u4F7F_u7528_u6750_u8D28" class="headerlink" title="2.1.1使用材质"></a>2.1.1使用材质</h6><ul>
+        <h3 id="Unity2D游戏开发从入门到精通"><a href="#Unity2D游戏开发从入门到精通" class="headerlink" title="Unity2D游戏开发从入门到精通"></a>Unity2D游戏开发从入门到精通</h3><p>这本书是从同事那借的,借我书的同事又是从另一个同事那借的,但另一个同事已经离职了,这真是个悲伤的故事,等我看完了想办法还给人家把…<br><a id="more"></a></p>
+<h3 id="读书笔记"><a href="#读书笔记" class="headerlink" title="读书笔记"></a>读书笔记</h3><h4 id="第一章-Unity及其组成的介绍"><a href="#第一章-Unity及其组成的介绍" class="headerlink" title="第一章 Unity及其组成的介绍"></a>第一章 Unity及其组成的介绍</h4><h5 id="1-1概述"><a href="#1-1概述" class="headerlink" title="1.1概述"></a>1.1概述</h5><p>本书基于Unity 4.5.1</p>
+<h4 id="第二章-材质和纹理"><a href="#第二章-材质和纹理" class="headerlink" title="第二章 材质和纹理"></a>第二章 材质和纹理</h4><h5 id="2-1材质和纹理的使用"><a href="#2-1材质和纹理的使用" class="headerlink" title="2.1材质和纹理的使用"></a>2.1材质和纹理的使用</h5><h6 id="2-1-1使用材质"><a href="#2-1-1使用材质" class="headerlink" title="2.1.1使用材质"></a>2.1.1使用材质</h6><ul>
 <li>修改材质Meterial:选中对象-&gt;Mesh Renderer组件-&gt;Materials-&gt;Element x</li>
 <li>材质可被应用于多个对象,修改材质则会马上应用到每个使用它的对象上.</li>
 </ul>
-<h6 id="2-1-2__u4E0D_u540C_u7684_u6750_u6599_u7C7B_u578B_u2013_u7740_u8272_u5668"><a href="#2-1-2__u4E0D_u540C_u7684_u6750_u6599_u7C7B_u578B_u2013_u7740_u8272_u5668" class="headerlink" title="2.1.2 不同的材料类型–着色器"></a>2.1.2 不同的材料类型–着色器</h6><ul>
+<h6 id="2-1-2-不同的材料类型–着色器"><a href="#2-1-2-不同的材料类型–着色器" class="headerlink" title="2.1.2 不同的材料类型–着色器"></a>2.1.2 不同的材料类型–着色器</h6><ul>
 <li>改变着色器(Shader)就可以改变材质在光照下的显示效果,即改变了对象的外观属性.</li>
 <li>注意:材质和材料是不同的,材质的一个属性是材料,而多种材料才是我们说的着色器,简单来说,材质包括材料,但材质又不仅仅是材料.</li>
 <li>默认的着色器是漫反射(Diffuse)</li>
 <li>可以选择镜面反射(Bumped Specular),材质会变得光滑有光泽.</li>
 <li>注意:大多数Unity自带的着色器并不适用于多数2D游戏.</li>
 </ul>
-<h6 id="2-1-3_u4F7F_u7528_u7EB9_u7406"><a href="#2-1-3_u4F7F_u7528_u7EB9_u7406" class="headerlink" title="2.1.3使用纹理"></a>2.1.3使用纹理</h6><ul>
+<h6 id="2-1-3使用纹理"><a href="#2-1-3使用纹理" class="headerlink" title="2.1.3使用纹理"></a>2.1.3使用纹理</h6><ul>
 <li>在Unity中,纹理的本质是图像,格式可以使BMP,JPEG和PNG等</li>
 <li>纹理是材质的一个属性,不使用纹理只能显示单一颜色.</li>
 <li>导入Unity自带的资源:Assets|Importing Package|xxx.</li>
 <li>注意:一个材质可以使用0个或多个纹理.</li>
 </ul>
-<h5 id="u5E94_u7528_u4E8E2D_u6E38_u620F_u7684_u6750_u8D28"><a href="#u5E94_u7528_u4E8E2D_u6E38_u620F_u7684_u6750_u8D28" class="headerlink" title="应用于2D游戏的材质"></a>应用于2D游戏的材质</h5><h6 id="2-2-1__u7F18_u7531"><a href="#2-2-1__u7F18_u7531" class="headerlink" title="2.2.1 缘由"></a>2.2.1 缘由</h6><ul>
+<h5 id="应用于2D游戏的材质"><a href="#应用于2D游戏的材质" class="headerlink" title="应用于2D游戏的材质"></a>应用于2D游戏的材质</h5><h6 id="2-2-1-缘由"><a href="#2-2-1-缘由" class="headerlink" title="2.2.1 缘由"></a>2.2.1 缘由</h6><ul>
 <li>Unity提供的材质的着色器类型都是被设计用于3D游戏对象的.</li>
 </ul>
-<h6 id="2-2-2__u6280_u5DE7_u4E00_3A_u4F7F_u7528_u767D_u8272_u7684_u73AF_u5883_u5149"><a href="#2-2-2__u6280_u5DE7_u4E00_3A_u4F7F_u7528_u767D_u8272_u7684_u73AF_u5883_u5149" class="headerlink" title="2.2.2 技巧一:使用白色的环境光"></a>2.2.2 技巧一:使用白色的环境光</h6><ul>
+<h6 id="2-2-2-技巧一-使用白色的环境光"><a href="#2-2-2-技巧一-使用白色的环境光" class="headerlink" title="2.2.2 技巧一:使用白色的环境光"></a>2.2.2 技巧一:使用白色的环境光</h6><ul>
 <li>思路:去掉3D场景中的所有光源,然后设置环境光的颜色为白色.</li>
 <li>实现:Edit|Render|Settings-&gt;Ambient Light设为白色</li>
 <li>如果是需要光源的2D游戏则不能使用此法.</li>
 </ul>
-<h6 id="2-2-3__u6280_u5DE7_u4E8C_3A_u4F7F_u7528_u5149_u4E0D_u654F_u611F_u7740_u8272_u5668"><a href="#2-2-3__u6280_u5DE7_u4E8C_3A_u4F7F_u7528_u5149_u4E0D_u654F_u611F_u7740_u8272_u5668" class="headerlink" title="2.2.3 技巧二:使用光不敏感着色器"></a>2.2.3 技巧二:使用光不敏感着色器</h6><ul>
+<h6 id="2-2-3-技巧二-使用光不敏感着色器"><a href="#2-2-3-技巧二-使用光不敏感着色器" class="headerlink" title="2.2.3 技巧二:使用光不敏感着色器"></a>2.2.3 技巧二:使用光不敏感着色器</h6><ul>
 <li>使材质自发光:选中希望不受影响的材质-&gt;设置着色器类型:Self-Illumin|Diffuse</li>
 <li>使对象不受场景光照影响(将其装入一个场景图层):右上角Layers-&gt;Edit Layers…-&gt;修改一个图层为x图层-&gt;选中希望不受光照影响的对象-&gt;(右上角)Layer-&gt;选中之前设置的x图层-&gt;选中场景中的光源-&gt;Light组件-&gt;Culling Mask-&gt;取消x图层</li>
 </ul>
-<h5 id="2-3__u7EB9_u7406_u4F7F_u7528_u89C4_u5219"><a href="#2-3__u7EB9_u7406_u4F7F_u7528_u89C4_u5219" class="headerlink" title="2.3 纹理使用规则"></a>2.3 纹理使用规则</h5><h6 id="2-3-1__u89C4_u52191_3A_u5206_u8FA8_u7387_u662F2_u7684_u6B21_u65B9"><a href="#2-3-1__u89C4_u52191_3A_u5206_u8FA8_u7387_u662F2_u7684_u6B21_u65B9" class="headerlink" title="2.3.1 规则1:分辨率是2的次方"></a>2.3.1 规则1:分辨率是2的次方</h6><ul>
+<h5 id="2-3-纹理使用规则"><a href="#2-3-纹理使用规则" class="headerlink" title="2.3 纹理使用规则"></a>2.3 纹理使用规则</h5><h6 id="2-3-1-规则1-分辨率是2的次方"><a href="#2-3-1-规则1-分辨率是2的次方" class="headerlink" title="2.3.1 规则1:分辨率是2的次方"></a>2.3.1 规则1:分辨率是2的次方</h6><ul>
 <li>纹理的大小必须为2的次方,否则Unity会缩放或拉伸纹理,影像显示效果.</li>
 <li>但如果将纹理的Textrue Type设置GUI则不会出现这个问题(但不能超过4096,Unity最大支持的纹理大小)</li>
 </ul>
-<h6 id="2-3-2__u89C4_u52192_3A_u4FDD_u8BC1_u201D_u8D28_u91CF_u201D"><a href="#2-3-2__u89C4_u52192_3A_u4FDD_u8BC1_u201D_u8D28_u91CF_u201D" class="headerlink" title="2.3.2 规则2:保证”质量”"></a>2.3.2 规则2:保证”质量”</h6><ul>
+<h6 id="2-3-2-规则2-保证”质量”"><a href="#2-3-2-规则2-保证”质量”" class="headerlink" title="2.3.2 规则2:保证”质量”"></a>2.3.2 规则2:保证”质量”</h6><ul>
 <li>创建图片时要使用”无损”格式,但不要使用JPG.</li>
 <li>设置Filter Mode:选中纹理-&gt;Filter Mode</li>
 <li>导入图像尽量以Unity可接受的最大尺寸4096导入.</li>
 </ul>
-<h6 id="2-3-3__u589E_u52A0_u963F_u5C14_u6CD5_u901A_u9053_28Alpha_Channel_29"><a href="#2-3-3__u589E_u52A0_u963F_u5C14_u6CD5_u901A_u9053_28Alpha_Channel_29" class="headerlink" title="2.3.3 增加阿尔法通道(Alpha Channel)"></a>2.3.3 增加阿尔法通道(Alpha Channel)</h6><h5 id="2-4__u5BFC_u5165_u7EB9_u7406"><a href="#2-4__u5BFC_u5165_u7EB9_u7406" class="headerlink" title="2.4 导入纹理"></a>2.4 导入纹理</h5><h6 id="2-4-1__u5BFC_u5165_u7EB9_u7406_u65F6_u7684_u9ED8_u8BA4_u8BBE_u7F6E_u4ECB_u7ECD"><a href="#2-4-1__u5BFC_u5165_u7EB9_u7406_u65F6_u7684_u9ED8_u8BA4_u8BBE_u7F6E_u4ECB_u7ECD" class="headerlink" title="2.4.1 导入纹理时的默认设置介绍"></a>2.4.1 导入纹理时的默认设置介绍</h6><ul>
+<h6 id="2-3-3-增加阿尔法通道-Alpha-Channel"><a href="#2-3-3-增加阿尔法通道-Alpha-Channel" class="headerlink" title="2.3.3 增加阿尔法通道(Alpha Channel)"></a>2.3.3 增加阿尔法通道(Alpha Channel)</h6><h5 id="2-4-导入纹理"><a href="#2-4-导入纹理" class="headerlink" title="2.4 导入纹理"></a>2.4 导入纹理</h5><h6 id="2-4-1-导入纹理时的默认设置介绍"><a href="#2-4-1-导入纹理时的默认设置介绍" class="headerlink" title="2.4.1 导入纹理时的默认设置介绍"></a>2.4.1 导入纹理时的默认设置介绍</h6><ul>
 <li>文理类型在2D游戏时需要设置为Advanced.</li>
 <li>生成Mip Maps(Generate Mip Maps):根据Z轴距离修改纹理数据的完整性.2D游戏中应该取消.</li>
 <li>循环模式(Wrap Mode):当对象面积大于纹理时,Repeat为重复铺满,Clamp为拉伸.</li>
 <li>各向异性级别(Aniso Level):当视线与纹理呈斜角时,纹理在游戏中的清晰程度.</li>
 <li>格式(Format):对于包含透明信息的纹理,应设为ARGB 32bit或RGBA 32bit.</li>
 </ul>
-<h6 id="2-4-2__u542B_u6709_u900F_u660E_u4FE1_u606F_u7684_u7EB9_u7406"><a href="#2-4-2__u542B_u6709_u900F_u660E_u4FE1_u606F_u7684_u7EB9_u7406" class="headerlink" title="2.4.2 含有透明信息的纹理"></a>2.4.2 含有透明信息的纹理</h6><ul>
+<h6 id="2-4-2-含有透明信息的纹理"><a href="#2-4-2-含有透明信息的纹理" class="headerlink" title="2.4.2 含有透明信息的纹理"></a>2.4.2 含有透明信息的纹理</h6><ul>
 <li>想要纹理的透明信息起作用必须让材质使用特定的着色器类型.</li>
 <li>设置材质的着色器:Unlit|Transparent CutOut,适用于透明信息为”完全透明”和”完全不透明”.</li>
 <li>设置材质的着色器:Unlit|Transparent,适用于透明信息介于”完全透明”与”完全不透明”之间的纹理.</li>
 </ul>
-</span>
+
+      
+    </div>
+
+    <div>
+      
+        
       
     </div>
 
@@ -411,25 +413,23 @@
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/01/26/Unity2D游戏开发从入门到精通1-2章/"
-           data-title="Unity2D游戏开发从入门到精通1-2章" data-url="http://cjlaaa.github.io/2016/01/26/Unity2D游戏开发从入门到精通1-2章/">
+           data-title="Unity2D游戏开发从入门到精通1-2章" data-url="http://yoursite.com/2016/01/26/Unity2D游戏开发从入门到精通1-2章/">
       </div>
     
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -457,10 +457,12 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/avatar.jpg" alt="机智の常总" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="机智の常总" />
           <p class="site-author-name" itemprop="name">机智の常总</p>
+          <p class="site-description motion-element" itemprop="description">程序员一枚,坐标帝都,无所事事</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">手游程序员一枚，坐标帝都，无所事事</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -469,19 +471,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -489,30 +495,13 @@
 
         <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/cjlaaa" target="_blank">
-                  
-                    <i class="fa fa-globe"></i> github
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/cjlaaa" target="_blank">
-                  
-                    <i class="fa fa-globe"></i> twitter
-                  
-                </a>
-              </span>
-            
-          
         </div>
 
         
         
 
-        <div class="links-of-author motion-element">
+        
+        <div class="links-of-blogroll motion-element">
           
         </div>
 
@@ -520,19 +509,13 @@
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Unity2D_u6E38_u620F_u5F00_u53D1_u4ECE_u5165_u95E8_u5230_u7CBE_u901A"><span class="nav-number">1.</span> <span class="nav-text">Unity2D游戏开发从入门到精通</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8BFB_u4E66_u7B14_u8BB0"><span class="nav-number">2.</span> <span class="nav-text">读书笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u7B2C_u4E00_u7AE0_Unity_u53CA_u5176_u7EC4_u6210_u7684_u4ECB_u7ECD"><span class="nav-number">2.1.</span> <span class="nav-text">第一章 Unity及其组成的介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1_u6982_u8FF0"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1概述</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u7B2C_u4E8C_u7AE0__u6750_u8D28_u548C_u7EB9_u7406"><span class="nav-number">2.2.</span> <span class="nav-text">第二章 材质和纹理</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1_u6750_u8D28_u548C_u7EB9_u7406_u7684_u4F7F_u7528"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.1材质和纹理的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-1_u4F7F_u7528_u6750_u8D28"><span class="nav-number">2.2.1.1.</span> <span class="nav-text">2.1.1使用材质</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-2__u4E0D_u540C_u7684_u6750_u6599_u7C7B_u578B_u2013_u7740_u8272_u5668"><span class="nav-number">2.2.1.2.</span> <span class="nav-text">2.1.2 不同的材料类型–着色器</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-3_u4F7F_u7528_u7EB9_u7406"><span class="nav-number">2.2.1.3.</span> <span class="nav-text">2.1.3使用纹理</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u5E94_u7528_u4E8E2D_u6E38_u620F_u7684_u6750_u8D28"><span class="nav-number">2.2.2.</span> <span class="nav-text">应用于2D游戏的材质</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-1__u7F18_u7531"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">2.2.1 缘由</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-2__u6280_u5DE7_u4E00_3A_u4F7F_u7528_u767D_u8272_u7684_u73AF_u5883_u5149"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">2.2.2 技巧一:使用白色的环境光</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-3__u6280_u5DE7_u4E8C_3A_u4F7F_u7528_u5149_u4E0D_u654F_u611F_u7740_u8272_u5668"><span class="nav-number">2.2.2.3.</span> <span class="nav-text">2.2.3 技巧二:使用光不敏感着色器</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3__u7EB9_u7406_u4F7F_u7528_u89C4_u5219"><span class="nav-number">2.2.3.</span> <span class="nav-text">2.3 纹理使用规则</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-1__u89C4_u52191_3A_u5206_u8FA8_u7387_u662F2_u7684_u6B21_u65B9"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">2.3.1 规则1:分辨率是2的次方</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-2__u89C4_u52192_3A_u4FDD_u8BC1_u201D_u8D28_u91CF_u201D"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">2.3.2 规则2:保证”质量”</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-3__u589E_u52A0_u963F_u5C14_u6CD5_u901A_u9053_28Alpha_Channel_29"><span class="nav-number">2.2.3.3.</span> <span class="nav-text">2.3.3 增加阿尔法通道(Alpha Channel)</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4__u5BFC_u5165_u7EB9_u7406"><span class="nav-number">2.2.4.</span> <span class="nav-text">2.4 导入纹理</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-4-1__u5BFC_u5165_u7EB9_u7406_u65F6_u7684_u9ED8_u8BA4_u8BBE_u7F6E_u4ECB_u7ECD"><span class="nav-number">2.2.4.1.</span> <span class="nav-text">2.4.1 导入纹理时的默认设置介绍</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-4-2__u542B_u6709_u900F_u660E_u4FE1_u606F_u7684_u7EB9_u7406"><span class="nav-number">2.2.4.2.</span> <span class="nav-text">2.4.2 含有透明信息的纹理</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Unity2D游戏开发从入门到精通"><span class="nav-number">1.</span> <span class="nav-text">Unity2D游戏开发从入门到精通</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#读书笔记"><span class="nav-number">2.</span> <span class="nav-text">读书笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一章-Unity及其组成的介绍"><span class="nav-number">2.1.</span> <span class="nav-text">第一章 Unity及其组成的介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1概述"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1概述</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二章-材质和纹理"><span class="nav-number">2.2.</span> <span class="nav-text">第二章 材质和纹理</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1材质和纹理的使用"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.1材质和纹理的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-1使用材质"><span class="nav-number">2.2.1.1.</span> <span class="nav-text">2.1.1使用材质</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-2-不同的材料类型–着色器"><span class="nav-number">2.2.1.2.</span> <span class="nav-text">2.1.2 不同的材料类型–着色器</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-3使用纹理"><span class="nav-number">2.2.1.3.</span> <span class="nav-text">2.1.3使用纹理</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#应用于2D游戏的材质"><span class="nav-number">2.2.2.</span> <span class="nav-text">应用于2D游戏的材质</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-1-缘由"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">2.2.1 缘由</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-2-技巧一-使用白色的环境光"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">2.2.2 技巧一:使用白色的环境光</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-3-技巧二-使用光不敏感着色器"><span class="nav-number">2.2.2.3.</span> <span class="nav-text">2.2.3 技巧二:使用光不敏感着色器</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-纹理使用规则"><span class="nav-number">2.2.3.</span> <span class="nav-text">2.3 纹理使用规则</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-1-规则1-分辨率是2的次方"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">2.3.1 规则1:分辨率是2的次方</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-2-规则2-保证”质量”"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">2.3.2 规则2:保证”质量”</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-3-增加阿尔法通道-Alpha-Channel"><span class="nav-number">2.2.3.3.</span> <span class="nav-text">2.3.3 增加阿尔法通道(Alpha Channel)</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-导入纹理"><span class="nav-number">2.2.4.</span> <span class="nav-text">2.4 导入纹理</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-4-1-导入纹理时的默认设置介绍"><span class="nav-number">2.2.4.1.</span> <span class="nav-text">2.4.1 导入纹理时的默认设置介绍</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-4-2-含有透明信息的纹理"><span class="nav-number">2.2.4.2.</span> <span class="nav-text">2.4.2 含有透明信息的纹理</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -541,7 +524,8 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -551,7 +535,7 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">机智の常总</span>
 </div>
@@ -563,7 +547,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Muse
   </a>
 </div>
 
@@ -572,16 +556,66 @@
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
   
   
 
   
-    
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/vendors/jquery-scrollintoview/jquery.scrollintoview.min.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
 
   
     
@@ -599,197 +633,21 @@
       || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
   </script>
-    
-     
 
-
+  
     
   
 
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
 
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
-
-
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
-
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
-
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
-
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
-
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
-
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
-        }
-      }
-    };
-  });
-</script>
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
-
+  
   
   
 
   
+
   
 
 </body>

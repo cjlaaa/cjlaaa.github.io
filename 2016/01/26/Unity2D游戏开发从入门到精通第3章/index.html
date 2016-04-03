@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Unity," />
@@ -44,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
 
 
 
@@ -54,10 +60,10 @@
 <meta name="description" content="接着上一篇继续.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity2D游戏开发从入门到精通第3章">
-<meta property="og:url" content="http://cjlaaa.github.io/2016/01/26/Unity2D游戏开发从入门到精通第3章/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/01/26/Unity2D游戏开发从入门到精通第3章/index.html">
 <meta property="og:site_name" content="机智の常总 的地盘">
 <meta property="og:description" content="接着上一篇继续.">
-<meta property="og:updated_time" content="2016-01-26T10:44:03.000Z">
+<meta property="og:updated_time" content="2016-01-26T10:44:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unity2D游戏开发从入门到精通第3章">
 <meta name="twitter:description" content="接着上一篇继续.">
@@ -65,10 +71,16 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: '',
-    sidebar: 'post',
-    motion: true
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -77,15 +89,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -103,7 +106,16 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -117,7 +129,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">程序员一枚,坐标帝都,无所事事</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -132,7 +144,7 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
@@ -196,36 +208,9 @@
       
 
       
-      
-        <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
     </ul>
   
 
-  
-    <div class="site-search">
-      
-  
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', 'zrEaiJFUyLzLqWRuE4Y_','2.0.0');
-</script>
-
-
-
-    </div>
   
 </nav>
 
@@ -234,8 +219,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -266,7 +252,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-26T18:30:45+08:00" content="2016-01-26">
               2016-01-26
             </time>
@@ -274,7 +263,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/读书笔记/" itemprop="url" rel="index">
@@ -302,81 +295,90 @@
 
           
 
+          
+          
+
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><p>接着上一篇继续.<br><a id="more"></a></p>
-<h3 id="u8BFB_u4E66_u7B14_u8BB0"><a href="#u8BFB_u4E66_u7B14_u8BB0" class="headerlink" title="读书笔记"></a>读书笔记</h3><h4 id="u7B2C_u4E09_u7AE0__u7740_u624B_u5F00_u53D1_u4E00_u4E2A_u7B80_u5355_u76842D_u6E38_u620F"><a href="#u7B2C_u4E09_u7AE0__u7740_u624B_u5F00_u53D1_u4E00_u4E2A_u7B80_u5355_u76842D_u6E38_u620F" class="headerlink" title="第三章 着手开发一个简单的2D游戏"></a>第三章 着手开发一个简单的2D游戏</h4><h5 id="3-1__u5F00_u59CB_u5F00_u53D12D_u6E38_u620F"><a href="#3-1__u5F00_u59CB_u5F00_u53D12D_u6E38_u620F" class="headerlink" title="3.1 开始开发2D游戏"></a>3.1 开始开发2D游戏</h5><h6 id="3-1-1__u5BFC_u5165_u7EB9_u7406_u8D44_u6E90"><a href="#3-1-1__u5BFC_u5165_u7EB9_u7406_u8D44_u6E90" class="headerlink" title="3.1.1 导入纹理资源"></a>3.1.1 导入纹理资源</h6><ul>
+        <p>接着上一篇继续.<br><a id="more"></a></p>
+<h3 id="读书笔记"><a href="#读书笔记" class="headerlink" title="读书笔记"></a>读书笔记</h3><h4 id="第三章-着手开发一个简单的2D游戏"><a href="#第三章-着手开发一个简单的2D游戏" class="headerlink" title="第三章 着手开发一个简单的2D游戏"></a>第三章 着手开发一个简单的2D游戏</h4><h5 id="3-1-开始开发2D游戏"><a href="#3-1-开始开发2D游戏" class="headerlink" title="3.1 开始开发2D游戏"></a>3.1 开始开发2D游戏</h5><h6 id="3-1-1-导入纹理资源"><a href="#3-1-1-导入纹理资源" class="headerlink" title="3.1.1 导入纹理资源"></a>3.1.1 导入纹理资源</h6><ul>
 <li>设置每个纹理的最大尺寸为4096(原因上一章说过)</li>
 </ul>
-<h6 id="3-1-2__u65B0_u5EFA_u6750_u8D28_u8D44_u6E90"><a href="#3-1-2__u65B0_u5EFA_u6750_u8D28_u8D44_u6E90" class="headerlink" title="3.1.2 新建材质资源"></a>3.1.2 新建材质资源</h6><ul>
+<h6 id="3-1-2-新建材质资源"><a href="#3-1-2-新建材质资源" class="headerlink" title="3.1.2 新建材质资源"></a>3.1.2 新建材质资源</h6><ul>
 <li>Unlit|Transparent Cutout着色器适合的纹理资源:透明信息只有完全透明和完全不透明的纹理.</li>
 </ul>
-<h6 id="3-1-3__u4FEE_u6539_u573A_u666F_u7684_u73AF_u5883_u5149_u53CA_u6E38_u620F_u65F6_u7684_u5C4F_u5E55_u5C3A_u5BF8"><a href="#3-1-3__u4FEE_u6539_u573A_u666F_u7684_u73AF_u5883_u5149_u53CA_u6E38_u620F_u65F6_u7684_u5C4F_u5E55_u5C3A_u5BF8" class="headerlink" title="3.1.3 修改场景的环境光及游戏时的屏幕尺寸"></a>3.1.3 修改场景的环境光及游戏时的屏幕尺寸</h6><ul>
+<h6 id="3-1-3-修改场景的环境光及游戏时的屏幕尺寸"><a href="#3-1-3-修改场景的环境光及游戏时的屏幕尺寸" class="headerlink" title="3.1.3 修改场景的环境光及游戏时的屏幕尺寸"></a>3.1.3 修改场景的环境光及游戏时的屏幕尺寸</h6><ul>
 <li>使用2.2.2的技巧设置Ambient Light为白色.</li>
 <li>设置开发分辨率:Edit|Project Settings|Player-&gt;Resolution</li>
 <li>游戏运行时可在窗口左上角设置分辨率.</li>
 </ul>
-<h5 id="3-2__u4E3A_u573A_u666F_u6DFB_u52A0_u6E38_u620F_u5BF9_u8C61"><a href="#3-2__u4E3A_u573A_u666F_u6DFB_u52A0_u6E38_u620F_u5BF9_u8C61" class="headerlink" title="3.2 为场景添加游戏对象"></a>3.2 为场景添加游戏对象</h5><h5 id="3-2-1__u8C03_u6574_u6E38_u620F_u5BF9_u8C61_u7684_u89D2_u5EA6"><a href="#3-2-1__u8C03_u6574_u6E38_u620F_u5BF9_u8C61_u7684_u89D2_u5EA6" class="headerlink" title="3.2.1 调整游戏对象的角度"></a>3.2.1 调整游戏对象的角度</h5><ul>
+<h5 id="3-2-为场景添加游戏对象"><a href="#3-2-为场景添加游戏对象" class="headerlink" title="3.2 为场景添加游戏对象"></a>3.2 为场景添加游戏对象</h5><h5 id="3-2-1-调整游戏对象的角度"><a href="#3-2-1-调整游戏对象的角度" class="headerlink" title="3.2.1 调整游戏对象的角度"></a>3.2.1 调整游戏对象的角度</h5><ul>
 <li>提示:旋转时按住Ctrl键可以保证每次旋转角度固定为15度.</li>
 </ul>
-<h6 id="3-2-2__u6539_u53D8_u6E38_u620F_u5BF9_u8C61_u7684_u4F4D_u7F6E"><a href="#3-2-2__u6539_u53D8_u6E38_u620F_u5BF9_u8C61_u7684_u4F4D_u7F6E" class="headerlink" title="3.2.2 改变游戏对象的位置."></a>3.2.2 改变游戏对象的位置.</h6><h6 id="3-2-3__u6E38_u620F_u5BF9_u8C61_u7684_u201D_u78B0_u649E_u201D_u7EC4_u4EF6"><a href="#3-2-3__u6E38_u620F_u5BF9_u8C61_u7684_u201D_u78B0_u649E_u201D_u7EC4_u4EF6" class="headerlink" title="3.2.3 游戏对象的”碰撞”组件"></a>3.2.3 游戏对象的”碰撞”组件</h6><ul>
+<h6 id="3-2-2-改变游戏对象的位置"><a href="#3-2-2-改变游戏对象的位置" class="headerlink" title="3.2.2 改变游戏对象的位置."></a>3.2.2 改变游戏对象的位置.</h6><h6 id="3-2-3-游戏对象的”碰撞”组件"><a href="#3-2-3-游戏对象的”碰撞”组件" class="headerlink" title="3.2.3 游戏对象的”碰撞”组件"></a>3.2.3 游戏对象的”碰撞”组件</h6><ul>
 <li>Mesh Collider网格碰撞体会对游戏对象使用很多计算,如果不需要复杂的碰撞计算,可以使用更简单的Box Collider代替.</li>
 </ul>
-<h5 id="3-3__u8BA9_u98DE_u8239_u52A8_u8D77_u6765"><a href="#3-3__u8BA9_u98DE_u8239_u52A8_u8D77_u6765" class="headerlink" title="3.3 让飞船动起来"></a>3.3 让飞船动起来</h5><ul>
+<h5 id="3-3-让飞船动起来"><a href="#3-3-让飞船动起来" class="headerlink" title="3.3 让飞船动起来"></a>3.3 让飞船动起来</h5><ul>
 <li>添加脚本</li>
 <li>transform.position:当前物体的位置.</li>
 <li>Vector3:构造一个描述位置的对象.</li>
 <li>Time.DeltaTime:以秒计算，完成最后一帧的时间（只读）。乘以它是为了在不同帧率下保持稳定状态.</li>
 </ul>
-<h5 id="3-4__u8BA9_u98DE_u8239_u53D1_u5C04_u5B50_u5F39"><a href="#3-4__u8BA9_u98DE_u8239_u53D1_u5C04_u5B50_u5F39" class="headerlink" title="3.4 让飞船发射子弹"></a>3.4 让飞船发射子弹</h5><h6 id="3-4-1__u5728_u573A_u666F_u4E2D_u6DFB_u52A0_u5B50_u5F39"><a href="#3-4-1__u5728_u573A_u666F_u4E2D_u6DFB_u52A0_u5B50_u5F39" class="headerlink" title="3.4.1 在场景中添加子弹"></a>3.4.1 在场景中添加子弹</h6><ul>
+<h5 id="3-4-让飞船发射子弹"><a href="#3-4-让飞船发射子弹" class="headerlink" title="3.4 让飞船发射子弹"></a>3.4 让飞船发射子弹</h5><h6 id="3-4-1-在场景中添加子弹"><a href="#3-4-1-在场景中添加子弹" class="headerlink" title="3.4.1 在场景中添加子弹"></a>3.4.1 在场景中添加子弹</h6><ul>
 <li>注意:需要让所有组件处在同一平面上,即Z轴相等,才能让碰撞检测有意义.</li>
 <li>如果有的组件改用Box Collider,则所有组件都应该使用Box Collider.</li>
 </ul>
-<h6 id="3-4-2__u6E38_u620F_u65F6_2C_u8BA9_u5B50_u5F39_u5728_u573A_u666F_u4E2D_u79FB_u52A8"><a href="#3-4-2__u6E38_u620F_u65F6_2C_u8BA9_u5B50_u5F39_u5728_u573A_u666F_u4E2D_u79FB_u52A8" class="headerlink" title="3.4.2 游戏时,让子弹在场景中移动"></a>3.4.2 游戏时,让子弹在场景中移动</h6><ul>
+<h6 id="3-4-2-游戏时-让子弹在场景中移动"><a href="#3-4-2-游戏时-让子弹在场景中移动" class="headerlink" title="3.4.2 游戏时,让子弹在场景中移动"></a>3.4.2 游戏时,让子弹在场景中移动</h6><ul>
 <li>添加脚本</li>
 <li>Invoke(“DestroyMe”,Lifetime):在Lifetime秒后调用DestroyMe函数.</li>
 <li>Destroy(gameObject):销毁当前对象.</li>
 <li>销毁子弹是因为子弹飞出屏幕后没有存在必要了.</li>
 <li>游戏运行时,Unity属性面板会动态显示参数.</li>
 </ul>
-<h6 id="3-4-3__u751F_u6210_u5B50_u5F39_u7684_u9884_u8BBE"><a href="#3-4-3__u751F_u6210_u5B50_u5F39_u7684_u9884_u8BBE" class="headerlink" title="3.4.3 生成子弹的预设"></a>3.4.3 生成子弹的预设</h6><ul>
+<h6 id="3-4-3-生成子弹的预设"><a href="#3-4-3-生成子弹的预设" class="headerlink" title="3.4.3 生成子弹的预设"></a>3.4.3 生成子弹的预设</h6><ul>
 <li>设置子弹预设</li>
 </ul>
-<h6 id="3-4-4__u8BBE_u7F6E_u5B50_u5F39_u7684_u53D1_u5C04_u4F4D_u7F6E"><a href="#3-4-4__u8BBE_u7F6E_u5B50_u5F39_u7684_u53D1_u5C04_u4F4D_u7F6E" class="headerlink" title="3.4.4 设置子弹的发射位置"></a>3.4.4 设置子弹的发射位置</h6><ul>
+<h6 id="3-4-4-设置子弹的发射位置"><a href="#3-4-4-设置子弹的发射位置" class="headerlink" title="3.4.4 设置子弹的发射位置"></a>3.4.4 设置子弹的发射位置</h6><ul>
 <li>使用一个空对象设置子弹发射位置</li>
 <li>使用Ctrl+Shift+N创建空对象.</li>
 <li>将此对象设置为飞船的子对象.</li>
 </ul>
-<h6 id="3-4-5__u5728_u6070_u5F53_u7684_u65F6_u673A_u53D1_u5C04_u5B50_u5F39"><a href="#3-4-5__u5728_u6070_u5F53_u7684_u65F6_u673A_u53D1_u5C04_u5B50_u5F39" class="headerlink" title="3.4.5 在恰当的时机发射子弹"></a>3.4.5 在恰当的时机发射子弹</h6><ul>
+<h6 id="3-4-5-在恰当的时机发射子弹"><a href="#3-4-5-在恰当的时机发射子弹" class="headerlink" title="3.4.5 在恰当的时机发射子弹"></a>3.4.5 在恰当的时机发射子弹</h6><ul>
 <li>添加脚本</li>
 <li>Input.GetButton(“Fire1”):是否按下了Fire1键.</li>
 <li>Instantiate():初始化一个新对象.</li>
 </ul>
-<h5 id="3-5_u8BA9_u5916_u661F_u98DE_u8239_u52A8_u8D77_u6765"><a href="#3-5_u8BA9_u5916_u661F_u98DE_u8239_u52A8_u8D77_u6765" class="headerlink" title="3.5让外星飞船动起来"></a>3.5让外星飞船动起来</h5><h6 id="3-5-1_u7F16_u5199_u811A_u672C"><a href="#3-5-1_u7F16_u5199_u811A_u672C" class="headerlink" title="3.5.1编写脚本"></a>3.5.1编写脚本</h6><ul>
+<h5 id="3-5让外星飞船动起来"><a href="#3-5让外星飞船动起来" class="headerlink" title="3.5让外星飞船动起来"></a>3.5让外星飞船动起来</h5><h6 id="3-5-1编写脚本"><a href="#3-5-1编写脚本" class="headerlink" title="3.5.1编写脚本"></a>3.5.1编写脚本</h6><ul>
 <li>添加脚本</li>
 <li>OnTriggerEnter(Collider other):碰撞触发回调(需要3.5.2和3.5.3的设置才能被调用)</li>
 </ul>
-<h6 id="3-5-2__u8BBE_u7F6E_u5916_u661F_u98DE_u8239_u7684_u89E6_u53D1_u5668"><a href="#3-5-2__u8BBE_u7F6E_u5916_u661F_u98DE_u8239_u7684_u89E6_u53D1_u5668" class="headerlink" title="3.5.2 设置外星飞船的触发器"></a>3.5.2 设置外星飞船的触发器</h6><ul>
+<h6 id="3-5-2-设置外星飞船的触发器"><a href="#3-5-2-设置外星飞船的触发器" class="headerlink" title="3.5.2 设置外星飞船的触发器"></a>3.5.2 设置外星飞船的触发器</h6><ul>
 <li>选中飞船的对象,将Box Collider组件的Is Trigger选中.</li>
 </ul>
-<h6 id="3-5-3__u4E3A_u5B50_u5F39_u9884_u8BBE_u6DFB_u52A0_u521A_u4F53_u7EC4_u4EF6"><a href="#3-5-3__u4E3A_u5B50_u5F39_u9884_u8BBE_u6DFB_u52A0_u521A_u4F53_u7EC4_u4EF6" class="headerlink" title="3.5.3 为子弹预设添加刚体组件"></a>3.5.3 为子弹预设添加刚体组件</h6><ul>
+<h6 id="3-5-3-为子弹预设添加刚体组件"><a href="#3-5-3-为子弹预设添加刚体组件" class="headerlink" title="3.5.3 为子弹预设添加刚体组件"></a>3.5.3 为子弹预设添加刚体组件</h6><ul>
 <li>为子弹预设添加刚体(Physics|Rigidbody)组件.并去掉Is Kinematic防止受重力影响.</li>
 </ul>
-<h5 id="3-6__u4E3A_u6E38_u620F_u6DFB_u52A0_u80CC_u666F"><a href="#3-6__u4E3A_u6E38_u620F_u6DFB_u52A0_u80CC_u666F" class="headerlink" title="3.6 为游戏添加背景"></a>3.6 为游戏添加背景</h5><ul>
+<h5 id="3-6-为游戏添加背景"><a href="#3-6-为游戏添加背景" class="headerlink" title="3.6 为游戏添加背景"></a>3.6 为游戏添加背景</h5><ul>
 <li>添加天空盒:Assets|Import Package|Skyboxes</li>
 <li>Skybox实际上是一种特殊的着色器类型,此种材质可以笼罩在整个游戏场景上.</li>
 <li>选中摄像机并添加Rendering|Skybox组件,并设置纹理.</li>
 </ul>
-</span>
+
+      
+    </div>
+
+    <div>
+      
+        
       
     </div>
 
@@ -418,25 +420,23 @@
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/01/26/Unity2D游戏开发从入门到精通第3章/"
-           data-title="Unity2D游戏开发从入门到精通第3章" data-url="http://cjlaaa.github.io/2016/01/26/Unity2D游戏开发从入门到精通第3章/">
+           data-title="Unity2D游戏开发从入门到精通第3章" data-url="http://yoursite.com/2016/01/26/Unity2D游戏开发从入门到精通第3章/">
       </div>
     
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -464,10 +464,12 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/avatar.jpg" alt="机智の常总" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="机智の常总" />
           <p class="site-author-name" itemprop="name">机智の常总</p>
+          <p class="site-description motion-element" itemprop="description">程序员一枚,坐标帝都,无所事事</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">手游程序员一枚，坐标帝都，无所事事</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -476,19 +478,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -496,30 +502,13 @@
 
         <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/cjlaaa" target="_blank">
-                  
-                    <i class="fa fa-globe"></i> github
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/cjlaaa" target="_blank">
-                  
-                    <i class="fa fa-globe"></i> twitter
-                  
-                </a>
-              </span>
-            
-          
         </div>
 
         
         
 
-        <div class="links-of-author motion-element">
+        
+        <div class="links-of-blogroll motion-element">
           
         </div>
 
@@ -527,19 +516,13 @@
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u8BFB_u4E66_u7B14_u8BB0"><span class="nav-number">1.</span> <span class="nav-text">读书笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u7B2C_u4E09_u7AE0__u7740_u624B_u5F00_u53D1_u4E00_u4E2A_u7B80_u5355_u76842D_u6E38_u620F"><span class="nav-number">1.1.</span> <span class="nav-text">第三章 着手开发一个简单的2D游戏</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1__u5F00_u59CB_u5F00_u53D12D_u6E38_u620F"><span class="nav-number">1.1.1.</span> <span class="nav-text">3.1 开始开发2D游戏</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-1__u5BFC_u5165_u7EB9_u7406_u8D44_u6E90"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">3.1.1 导入纹理资源</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-2__u65B0_u5EFA_u6750_u8D28_u8D44_u6E90"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">3.1.2 新建材质资源</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-3__u4FEE_u6539_u573A_u666F_u7684_u73AF_u5883_u5149_u53CA_u6E38_u620F_u65F6_u7684_u5C4F_u5E55_u5C3A_u5BF8"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">3.1.3 修改场景的环境光及游戏时的屏幕尺寸</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2__u4E3A_u573A_u666F_u6DFB_u52A0_u6E38_u620F_u5BF9_u8C61"><span class="nav-number">1.1.2.</span> <span class="nav-text">3.2 为场景添加游戏对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1__u8C03_u6574_u6E38_u620F_u5BF9_u8C61_u7684_u89D2_u5EA6"><span class="nav-number">1.1.3.</span> <span class="nav-text">3.2.1 调整游戏对象的角度</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-2-2__u6539_u53D8_u6E38_u620F_u5BF9_u8C61_u7684_u4F4D_u7F6E"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">3.2.2 改变游戏对象的位置.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-2-3__u6E38_u620F_u5BF9_u8C61_u7684_u201D_u78B0_u649E_u201D_u7EC4_u4EF6"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">3.2.3 游戏对象的”碰撞”组件</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3__u8BA9_u98DE_u8239_u52A8_u8D77_u6765"><span class="nav-number">1.1.4.</span> <span class="nav-text">3.3 让飞船动起来</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4__u8BA9_u98DE_u8239_u53D1_u5C04_u5B50_u5F39"><span class="nav-number">1.1.5.</span> <span class="nav-text">3.4 让飞船发射子弹</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-1__u5728_u573A_u666F_u4E2D_u6DFB_u52A0_u5B50_u5F39"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">3.4.1 在场景中添加子弹</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-2__u6E38_u620F_u65F6_2C_u8BA9_u5B50_u5F39_u5728_u573A_u666F_u4E2D_u79FB_u52A8"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">3.4.2 游戏时,让子弹在场景中移动</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-3__u751F_u6210_u5B50_u5F39_u7684_u9884_u8BBE"><span class="nav-number">1.1.5.3.</span> <span class="nav-text">3.4.3 生成子弹的预设</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-4__u8BBE_u7F6E_u5B50_u5F39_u7684_u53D1_u5C04_u4F4D_u7F6E"><span class="nav-number">1.1.5.4.</span> <span class="nav-text">3.4.4 设置子弹的发射位置</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-5__u5728_u6070_u5F53_u7684_u65F6_u673A_u53D1_u5C04_u5B50_u5F39"><span class="nav-number">1.1.5.5.</span> <span class="nav-text">3.4.5 在恰当的时机发射子弹</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5_u8BA9_u5916_u661F_u98DE_u8239_u52A8_u8D77_u6765"><span class="nav-number">1.1.6.</span> <span class="nav-text">3.5让外星飞船动起来</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-5-1_u7F16_u5199_u811A_u672C"><span class="nav-number">1.1.6.1.</span> <span class="nav-text">3.5.1编写脚本</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-5-2__u8BBE_u7F6E_u5916_u661F_u98DE_u8239_u7684_u89E6_u53D1_u5668"><span class="nav-number">1.1.6.2.</span> <span class="nav-text">3.5.2 设置外星飞船的触发器</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-5-3__u4E3A_u5B50_u5F39_u9884_u8BBE_u6DFB_u52A0_u521A_u4F53_u7EC4_u4EF6"><span class="nav-number">1.1.6.3.</span> <span class="nav-text">3.5.3 为子弹预设添加刚体组件</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6__u4E3A_u6E38_u620F_u6DFB_u52A0_u80CC_u666F"><span class="nav-number">1.1.7.</span> <span class="nav-text">3.6 为游戏添加背景</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#读书笔记"><span class="nav-number">1.</span> <span class="nav-text">读书笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第三章-着手开发一个简单的2D游戏"><span class="nav-number">1.1.</span> <span class="nav-text">第三章 着手开发一个简单的2D游戏</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-开始开发2D游戏"><span class="nav-number">1.1.1.</span> <span class="nav-text">3.1 开始开发2D游戏</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-1-导入纹理资源"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">3.1.1 导入纹理资源</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-2-新建材质资源"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">3.1.2 新建材质资源</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-1-3-修改场景的环境光及游戏时的屏幕尺寸"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">3.1.3 修改场景的环境光及游戏时的屏幕尺寸</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-为场景添加游戏对象"><span class="nav-number">1.1.2.</span> <span class="nav-text">3.2 为场景添加游戏对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-调整游戏对象的角度"><span class="nav-number">1.1.3.</span> <span class="nav-text">3.2.1 调整游戏对象的角度</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-2-2-改变游戏对象的位置"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">3.2.2 改变游戏对象的位置.</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-2-3-游戏对象的”碰撞”组件"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">3.2.3 游戏对象的”碰撞”组件</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-让飞船动起来"><span class="nav-number">1.1.4.</span> <span class="nav-text">3.3 让飞船动起来</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-让飞船发射子弹"><span class="nav-number">1.1.5.</span> <span class="nav-text">3.4 让飞船发射子弹</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-1-在场景中添加子弹"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">3.4.1 在场景中添加子弹</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-2-游戏时-让子弹在场景中移动"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">3.4.2 游戏时,让子弹在场景中移动</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-3-生成子弹的预设"><span class="nav-number">1.1.5.3.</span> <span class="nav-text">3.4.3 生成子弹的预设</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-4-设置子弹的发射位置"><span class="nav-number">1.1.5.4.</span> <span class="nav-text">3.4.4 设置子弹的发射位置</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-4-5-在恰当的时机发射子弹"><span class="nav-number">1.1.5.5.</span> <span class="nav-text">3.4.5 在恰当的时机发射子弹</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-5让外星飞船动起来"><span class="nav-number">1.1.6.</span> <span class="nav-text">3.5让外星飞船动起来</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#3-5-1编写脚本"><span class="nav-number">1.1.6.1.</span> <span class="nav-text">3.5.1编写脚本</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-5-2-设置外星飞船的触发器"><span class="nav-number">1.1.6.2.</span> <span class="nav-text">3.5.2 设置外星飞船的触发器</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-5-3-为子弹预设添加刚体组件"><span class="nav-number">1.1.6.3.</span> <span class="nav-text">3.5.3 为子弹预设添加刚体组件</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-为游戏添加背景"><span class="nav-number">1.1.7.</span> <span class="nav-text">3.6 为游戏添加背景</span></a></li></ol></li></ol></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -548,7 +531,8 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -558,7 +542,7 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">机智の常总</span>
 </div>
@@ -570,7 +554,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Muse
   </a>
 </div>
 
@@ -579,16 +563,66 @@
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
   
   
 
   
-    
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/vendors/jquery-scrollintoview/jquery.scrollintoview.min.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
 
   
     
@@ -606,197 +640,21 @@
       || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
   </script>
-    
-     
 
-
+  
     
   
 
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
 
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
-
-
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
-
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
-
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
-
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
-
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
-
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
-        }
-      }
-    };
-  });
-</script>
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
-
+  
   
   
 
   
+
   
 
 </body>
